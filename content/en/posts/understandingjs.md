@@ -1,16 +1,16 @@
 ---
-title: "Syntax highlighting"
-date: 2019-12-18T10:33:41+09:00
+title: "Understanding JS under the hood: var, let and const \U0001F9BE"
+date: 2021-02-18T10:33:41+09:00
 description: "Syntax highlighting test"
 draft: false
 hideToc: false
 enableToc: true
 enableTocContent: false
-author: Jeus
+author: Jimmy Vasquez
 authorEmoji: 🎅
 pinned: true
 tags:
-- hugo
+- javascript
 series:
 -
 categories:
@@ -18,11 +18,12 @@ categories:
 image: images/feature2/color-palette.png
 ---
 
-## Code Syntax Highlighting
+Javascript is one of the top programming languages in this 2021 and I really love it, that’s why today we’re gonna talk about a topic that sometimes is very complex for beginners. To create truly powerfull and great apps, we need to understant how JS manage the variables, functions, call’s, etc. So, let’s talk about variables declaratations and how we have to be carefull in some cases.
 
-Verify the following code blocks render as code blocks and highlight properly. 
 
-More about tuning syntax highlighting is the [Hugo documentation](https://gohugo.io/content-management/syntax-highlighting/).
+## ¿Javascript or ECMAScript?, ¿are they the same?
+
+As we know JS is a programming language whose in the beginning just had the chance to be used in the web browser. **ECMAScript is the specification it’s based on. By reading the ECMAScript specification, you learn how to create a scripting language. By reading the JavaScript documentation, you learn how to use a scripting language.**
 
 ### Diff
 

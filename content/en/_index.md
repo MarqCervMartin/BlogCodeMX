@@ -25,9 +25,9 @@ header:
     paddingY: 0
     align: center
     title:
-      - HUGO
+      - Blog CodeMX
     subtitle:
-      - The world’s fastest framework for building websites
+      - Mini tutoriales, recursos y blogs geeks!🤙
     titleColor: 
     titleShadow: true
     titleFontSize: 44
