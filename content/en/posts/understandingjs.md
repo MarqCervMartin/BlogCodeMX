@@ -1,25 +1,23 @@
 ---
 title: "Understanding JS under the hood: var, let and const \U0001F9BE"
-date: 2021-02-18T10:33:41+09:00
-description: "Syntax highlighting test"
-draft: false
+date: 2021-02-18T10:33:41.000+09:00
+description: Syntax highlighting test
 hideToc: false
 enableToc: true
 enableTocContent: false
 author: Jimmy Vasquez
-authorEmoji: 🎅
+authorEmoji: "\U0001F385"
 pinned: true
 tags:
 - javascript
 series:
--
+- 
 categories:
 - hugo
 image: images/feature2/color-palette.png
+
 ---
-
 Javascript is one of the top programming languages in this 2021 and I really love it, that’s why today we’re gonna talk about a topic that sometimes is very complex for beginners. To create truly powerfull and great apps, we need to understant how JS manage the variables, functions, call’s, etc. So, let’s talk about variables declaratations and how we have to be carefull in some cases.
-
 
 ## ¿Javascript or ECMAScript?, ¿are they the same?
 
@@ -177,7 +175,7 @@ main()
 }
 ```
 
-### SQL 
+### SQL
 
 ``` sql
 SELECT column_name,column_name
