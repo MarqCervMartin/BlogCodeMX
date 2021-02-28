@@ -42,3 +42,5 @@ fields:
 - type: file
   name: image
   label: image
+pages:
+- content/en/posts/login-react-native-cli-con-firebase.md
