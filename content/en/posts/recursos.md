@@ -1,13 +1,14 @@
 ---
-title: Shortcodes
+title: Libros y Cursos Free
 date: 2020-01-25T06:40:51.000+09:00
-description: tabs, code-tabs, expand, alert, warning, notice, img, box
+description: LIbros y Cursos acerca de cualquier lenguaje o tecnología.
 hideToc: false
 enableToc: true
-enableTocContent: true
+enableTocContent: false
 tocPosition: inner
 tags:
-- shortcode
+- libros
+- cursos
 series:
 - 
 categories:
@@ -15,120 +16,30 @@ categories:
 image: images/feature3/code-file.png
 
 ---
-## Markdownify box
+## Repositorios
 
-{{< boxmd >}}
-This is **boxmd** shortcode
-{{< /boxmd >}}
+{{< expand "Libros" >}}
 
-## Simple box
+### Mega
 
-{{< box >}}
-This is **box** shortcode
-{{< /box >}}
+#### Hacking y Programación
 
-## Code tabs
+[https://mega.nz/folder/SuhUlCzQ#L8BB64_1HyBem4mp1x59Vw/folder/6rxi3aoY_](https://mega.nz/folder/SuhUlCzQ#L8BB64_1HyBem4mp1x59Vw/folder/6rxi3aoY "https://mega.nz/folder/SuhUlCzQ#L8BB64_1HyBem4mp1x59Vw/folder/6rxi3aoY")
 
-Make it easy to switch between different code
+#### Programación
 
-{{< codes java javascript >}}
-  {{< code >}}
+[https://mega.nz/folder/0HoQFCTa#jDHRMdVawxO1MeZDhAxBBg](https://mega.nz/folder/0HoQFCTa#jDHRMdVawxO1MeZDhAxBBg "Programación")
 
-  ```java
-  System.out.println('Hello World!');
-  ```
+#### Carding
 
-  {{< /code >}}
-
-  {{< code >}}
-
-  ```javascript
-  console.log('Hello World!');
-  ```
-  
-  {{< /code >}}
-{{< /codes >}}
-
-## Tabs for general purpose
-
-{{< tabs Windows MacOS Ubuntu >}}
-  {{< tab >}}
-
-  ### Windows section
-
-  ```javascript
-  console.log('Hello World!');
-  ```
-
-  ⚠️Becareful that the content in the tab should be different from each other. The tab makes unique id hashes depending on the tab contents. So, If you just copy-paste the tabs with multiple times, since it has the same contents, the tab will not work.
-
-  {{< /tab >}}
-  {{< tab >}}
-
-  ### MacOS section
-
-  Hello world!
-  {{< /tab >}}
-  {{< tab >}}
-
-  ### Ubuntu section
-
-  Great!
-  {{< /tab >}}
-{{< /tabs >}}
-
-## Expand
-
-{{< expand "Expand me" >}}
-
-### Title
-
-contents
+[https://mega.nz/folder/74dzGChS#N4ue_LhwtbBzE05vFd-3sg](https://mega.nz/folder/74dzGChS#N4ue_LhwtbBzE05vFd-3sg "https://mega.nz/folder/74dzGChS#N4ue_LhwtbBzE05vFd-3sg")
 
 {{< /expand >}}
 
-{{< expand "Expand me2" >}}
+{{< expand "Cursos" >}}
 
-### Title2
+### Drive
 
-contents2
+[https://drive.google.com/drive/folders/1wwp9wlVI0xD3TUHBYuH8y1ASiw4SHQH4](https://drive.google.com/drive/folders/1wwp9wlVI0xD3TUHBYuH8y1ASiw4SHQH4 "https://drive.google.com/drive/folders/1wwp9wlVI0xD3TUHBYuH8y1ASiw4SHQH4")
 
 {{< /expand >}}
-
-## Alert
-
-Colored box
-
-{{< alert theme="warning" >}}
-**this** is a text
-{{< /alert >}}
-
-{{< alert theme="info" >}}
-**this** is a text
-{{< /alert >}}
-
-{{< alert theme="success" >}}
-**this** is a text
-{{< /alert >}}
-
-{{< alert theme="danger" >}}
-**this** is a text
-{{< /alert >}}
-
-## Notice
-
-{{< notice success >}}
-success text
-{{< /notice >}}
-
-{{< notice info >}}
-info text
-{{< /notice >}}
-
-{{< notice warning >}}
-warning text
-{{< /notice >}}
-
-{{< notice error >}}
-error text
-{{< /notice >}}
