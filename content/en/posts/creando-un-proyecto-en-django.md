@@ -18,4 +18,18 @@ Hola coder's, en este post aprenderemos desde instalar lo necesario para la crea
 
 ## Instalación de Python
 
-Antes que nada debemos de instalar en nuestro ordenador el lenguaje de programación Python, ya que este lenguaje se ocupará en Django
+Antes que nada debemos de instalar en nuestro ordenador el lenguaje de programación Python, ya que este lenguaje se ocupará en Django.
+
+💥 Nota: Instalar la version 3 de Python en adelante
+
+{{<tabs Windows MacOS Ubuntu>}}
+
+{{<tab>}}
+
+### Windows
+
+Si estás usando un sistema operativo windows, lo que debe hacer es ir al siguiente enlace, e instalarlo:
+
+[https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/ "https://www.python.org/downloads/windows/")
+
+{{</tab>}}
