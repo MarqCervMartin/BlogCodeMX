@@ -1,7 +1,7 @@
 +++
 author = "Gustavo Calzada"
 authorEmoji = "👿"
-categories = []
+categories = ["Framework Web"]
 date = 2021-03-10T04:18:00Z
 description = "Primeros pasos para la creación de un proyecto en Django"
 enableToc = true
@@ -10,7 +10,7 @@ hideToc = true
 image = ""
 pinned = true
 series = []
-tags = ["#Python", "#Django"]
+tags = ["Web", "Python", "Django"]
 title = "Creando un proyecto en Django "
 
 +++
