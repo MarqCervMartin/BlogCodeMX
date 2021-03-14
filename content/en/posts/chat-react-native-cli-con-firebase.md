@@ -64,3 +64,135 @@ yarn add @react-navigation/native @react-navigation/stack react-native-reanimate
 ### Estructura de la Aplicación
 
 Gracias a algunos componentes y nuestra navegación, podremos, tener una interfaz de prueba. En el siguiente [repositorio](https://github.com/MarqCervMartin/ChatFirebase/tree/meetup) en la rama meetup podremos importar la carpeta src.
+
+### Registrar usuarios en Realtime
+
+En el archivo src/navigation/AuthProvider.js registraremos y por el momento actualizaremos el estado del usuario, donde 1 significa conectado y 0 desconectado.
+
+```javascript
+import React, { createContext, useState } from 'react';
+import auth from '@react-native-firebase/auth';
+import database from '@react-native-firebase/database';
+
+export const AuthProvider = ({ children }) => {
+    const [user, setUser] = useState(null);
+  
+    return (
+      <AuthContext.Provider
+        value={{
+          user,
+          setUser,
+          login: async (email, password) => {
+            try {
+              let {user} = await auth().signInWithEmailAndPassword(
+                email,
+                password,
+              );
+              await database()
+                .ref('usuarios/' + user.uid)
+                .update({state: 1});
+              console.log('Usuario loggeado');
+            } catch (e) {
+              console.log(e);
+            }
+          },
+          register: async (email, password) => {
+            try {
+              let {user} = await auth().createUserWithEmailAndPassword(
+                email,
+                password,
+              );
+              //setUser(user)
+              console.log(user);
+              const usuario = {
+                uid: user.uid,
+                email: user.email,
+                state: 1,
+              };
+              await database()
+                .ref('usuarios/' + user.uid)
+                .set(usuario);
+              console.log('Usuario guardado');
+            } catch (e) {
+              console.log(e);
+            }
+          },
+          logout: async () => {
+            try {
+              await database()
+                .ref('usuarios/' + user.uid)
+                .update({state: 0});
+              await auth().signOut();
+            } catch (e) {
+              console.error(e);
+            }
+          }
+        }}
+      >
+        {children}
+      </AuthContext.Provider>
+    );
+  };
+
+export const AuthContext = createContext({});
+```
+
+Hecho esto ya podemos registrar usuarios, el siguiente paso es listar nuestros usuarios online y poder enviarles mensajes. En nuestra HomeScreen agregamos.
+
+```javascript
+const user = auth().currentUser;
+  const [arrayOnline, setArrayOnline] = useState([]);
+  const [objOnline, setObjonline] = useState({});
+
+  useEffect(() => {
+    //listar usuarios online, nodo estado firebase
+    database()
+      .ref(`usuarios`)
+      .orderByChild('state')
+      .limitToLast(50)
+      .on('child_added', (snap) => {
+        if (snap.val().state === true) {
+          if (user.uid !== snap.key) {
+            //delete objOnline[key];
+            setObjonline((prevState) => {
+              const key = snap.key;
+              const val = snap.val();
+
+              return { ...prevState, [key]: val };
+            });
+          }
+        }
+      });
+
+    database()
+      .ref(`usuarios`)
+      .on('child_changed', (snap) => {
+        //console.log(snap.val());
+        if (snap.val().state === true) {
+          if (user.uid !== snap.key) {
+            setObjonline((prevState) => {
+              const key = snap.key;
+              const val = snap.val();
+
+              return { ...prevState, [key]: val };
+            });
+          }
+        } else {
+          setObjonline((prevState) => {
+            const key = snap.key;
+            delete prevState[key];
+            return { ...prevState };
+          });
+        }
+      });
+      
+  }, []);
+
+  useEffect(() => {
+    const newArray = Object.values(objOnline);
+    setArrayOnline(newArray);
+    console.log(arrayOnline)
+  }, [objOnline]);
+```
+
+Ahora bien ya podemos listar y seleccionar nuestro usuario, ahora vamos a enviar mensajes mediante GiftedChat
