@@ -195,4 +195,10 @@ const user = auth().currentUser;
   }, [objOnline]);
 ```
 
-Ahora bien ya podemos listar y seleccionar nuestro usuario, ahora vamos a enviar mensajes mediante GiftedChat
+Ahora bien ya podemos listar y seleccionar nuestro usuario, ahora vamos a enviar mensajes mediante GiftedChat, para ello lo instalamos:
+
+```bash
+yarn add react-native-gifted-chat
+```
+
+Es hora de enviar y mostrar mensajes desde nuestro ChatScreen.
