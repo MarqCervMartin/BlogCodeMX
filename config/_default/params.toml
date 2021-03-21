@@ -56,14 +56,14 @@ publicationIcon = "📚"
 typeIcon = "🎯"
 
 # whoami
-myname = "zzossig"
-email = "zzossig@gmail.com"
-whoami = "Web Developer"
-bioImageUrl = ""
+myname = "CodeMX"
+email = "codeersmx@gmail.com"
+whoami = "Comunidad Geek"
+bioImageUrl = "https://codemx.org/images/logo.png"
 useGravatar = false
-location = "Seoul, Korea"
-organization = "Hugo"
-link = "https://zzossig.io/ko"
+location = "EdoMex, México"
+organization = "Coders"
+link = "https://codemx.org"
 
 # sidebar
 enableBio = true
@@ -157,15 +157,15 @@ commento = false
   dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions]
-  email = "mailto:your@email.com"
+  email = "codeersmx@gmail.com"
   phone = ""
-  facebook = "http://example.org/"
-  twitter = "http://example.org/"
-  github = "https://github.com/zzossig/hugo-theme-zzo"
+  facebook = "https://www.facebook.com/CodeeMX"
+  twitter = ""
+  github = "https://github.com/orgs/CodeersMX/"
   stack-overflow = ""
   instagram = ""
   google-plus = ""
-  youtube = ""
+  youtube = "https://www.youtube.com/channel/UCve0-mOyNxzTnr5HvHF0RSw"
   medium = ""
   tumblr = ""
   linkedin = ""

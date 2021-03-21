@@ -1,24 +1,23 @@
 +++
 date = 2019-02-28T00:00:00Z
-description = "Hugo, the world’s fastest framework for building websites"
+description = "Code MX es una comunidad geek, programación y talleres"
 title = "About"
 type = "about"
 
 +++
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows. hola soy gus <3
+Hola, en está pagína encontraras diversos recursos y apoyo a los talleres que con <3 impartimos en diversos eventos de tecnología.
 
-Hugo makes use of a variety of open source projects including:
+Una comunidad por y para los developers:
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+* Jimmy Vazquez un fullstack con muchos proyectos.
+* Axel Valenzuela un mobile developer dispuesto a guiarte.
+* Martín Márquez un software engineer dispuesto a ayudarte.
+* Gustavo Calzada un entusiasta con ganas de aprender y dar a conocer.
+* Eduardo Antonio un coder apasionado por la electronica.
+* Francisco un aficionado a DC que le gusta aprender en cada meetup.  
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+CodeMX necesita de tu ayuda, con algún talento, proyecto o trabajo que necesites dar a conocer.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+Sientete libre de compartir en la comuniad y ven con nosotros a los mejores eventos de tecnología!
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Buy me a coffe [Help CodeMX](https://www.buymeacoffee.com/codemx).
