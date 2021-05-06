@@ -44,5 +44,6 @@ fields:
   label: image
 pages:
 - content/en/posts/chat-react-native-cli-con-firebase.md
+- content/en/posts/conceptos-basicos-de-sql.md
 - content/en/posts/creando-un-proyecto-en-django.md
 - content/en/posts/login-react-native-cli-con-firebase.md
