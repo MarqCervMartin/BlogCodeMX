@@ -43,3 +43,18 @@ A continuación les dejaré un sitio en dónde les mostraran como instalarlo
 [https://techkrowd.com/2019/12/09/como-instalar-python-3-en-mac-os-x-10-9-o-posterior/](https://techkrowd.com/2019/12/09/como-instalar-python-3-en-mac-os-x-10-9-o-posterior/ "https://techkrowd.com/2019/12/09/como-instalar-python-3-en-mac-os-x-10-9-o-posterior/")
 
 {{</tab>}}
+
+{{<tab>}}
+
+### Ubuntu
+
+Normalmente en el sistema operativo Linux Python aparece por defecto, solo es cuestión de irnos a la terminal y escribir:
+
+    $ python3 --version
+
+dado caso que no aparezca la versión, escribiremos lo siguiente
+
+    $ sudo apt-get update
+    $ sudo apt-get install python3.6
+
+{{</tab>}}
