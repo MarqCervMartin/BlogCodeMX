@@ -33,3 +33,13 @@ Si estás usando un sistema operativo windows, lo que debe hacer es ir al siguie
 [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/ "https://www.python.org/downloads/windows/")
 
 {{</tab>}}
+
+{{<tab>}}
+
+### MacOS
+
+A continuación les dejaré un sitio en dónde les mostraran como instalarlo
+
+[https://techkrowd.com/2019/12/09/como-instalar-python-3-en-mac-os-x-10-9-o-posterior/](https://techkrowd.com/2019/12/09/como-instalar-python-3-en-mac-os-x-10-9-o-posterior/ "https://techkrowd.com/2019/12/09/como-instalar-python-3-en-mac-os-x-10-9-o-posterior/")
+
+{{</tab>}}
