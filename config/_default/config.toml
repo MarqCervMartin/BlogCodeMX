@@ -1,4 +1,4 @@
-baseURL = "https://blog.codemx.org"
+baseURL = "https://blog-code-mx.vercel.app"
 title = "Blog CodeMX"
 theme = "zzo"
 
